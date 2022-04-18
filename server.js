@@ -16,14 +16,13 @@ const server = express();
 
 server.use(cors());
 server.use(express.json());
-server.use(express.urlencoded({extended: true}));
+server.use(express.urlencoded({ extended: true }));
 server.use(fileupload());
 
 server.use(express.static(__dirname + '/public'));
 
-
 server.use('/', apiRoutes);
 
-server.listen(process.env.PORT, () =>{
+server.listen(process.env.PORT, () => {
     console.log(" - Starting running")
 })
