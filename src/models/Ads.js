@@ -9,7 +9,7 @@ const AdsSchema = new mongoose.Schema({
     dateCreated: Date,
     title: String,
     price: Number,
-    priceNegotiabe: Boolean,
+    priceNegotiable: Boolean,
     descreption: String,
     views: Number,
     status: String
